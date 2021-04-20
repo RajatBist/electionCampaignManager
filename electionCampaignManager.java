@@ -10,7 +10,6 @@ public class electionCampaignManager{
         System.out.println("The three candidates running for office are: Kerry, Bush, and Gore");
         for(int i = 0; i<voterCount; i++){
             System.out.println("Voter Number" + (i+1) + ": ");
-            
             System.out.println("Rank 1: ");
             String currentVote = input.next();
             if(currentVote.equals("kerry")){
@@ -22,7 +21,6 @@ public class electionCampaignManager{
             else{
                 goreVotes = goreVotes+3;
             }
-            
             System.out.println("Rank 2: ");
             currentVote = input.next();
             if(currentVote.equals("kerry")){
@@ -34,7 +32,6 @@ public class electionCampaignManager{
             else{
                 goreVotes = goreVotes+2;
             }
-            
              System.out.println("Rank 3: ");
             currentVote = input.next();
             if(currentVote.equals("kerry")){
@@ -47,7 +44,6 @@ public class electionCampaignManager{
                 ++goreVotes;
             }           
         }
-        
         System.out.println("The candidate with the most votes, and the winner of the election is: ");
         if(kerryVotes>bushVotes && kerryVotes>goreVotes){
             System.out.println("John Kerry");
@@ -61,6 +57,5 @@ public class electionCampaignManager{
         else if( kerryVotes == bushVotes || kerryVotes == goreVotes || bushVotes == goreVotes){
             System.out.println("A tie has occured");
         }
-        
     }
 }
